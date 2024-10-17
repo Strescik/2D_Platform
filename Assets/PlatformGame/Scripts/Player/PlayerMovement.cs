@@ -65,12 +65,12 @@ namespace Assets.PlatformGame.Scripts.Player
                 camera.transform.position = new Vector3(18, 0, -10);
                 transform.position = collision.transform.position;
                 collision.gameObject.SetActive(false);
-                //GameManager.Instance.AddOwnedGold();
+                GameManager.Instance.AddOwnedGold();
 
             }
             else if(collision.transform.CompareTag("Gold"))
             {
-                //GameManager.Instance.SetCollectedGold(1);
+                GameManager.Instance.SetCollectedGold(1);
                 collision.transform.gameObject.SetActive(false);
             }
 
